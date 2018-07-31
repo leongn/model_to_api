@@ -27,7 +27,7 @@ def ping():
         status = 400
     return flask.Response(response= json.dumps(' '), status=status, mimetype='application/json' )
 
-@app.route('/invocations', methods=['POST']))
+@app.route('/invocations', methods=['POST'])
 def transformation():
     # Get input JSON data and convert it to a DF
     input_json = flask.request.get_json()
